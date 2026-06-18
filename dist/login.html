@@ -5,125 +5,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de Login</title>
     <link rel="stylesheet" href="./css/styles.css">
-
 </head>
-<body class="font-poppins min-h-screen bg-[#EEEAEA] flex items-center justify-center p-4 ">
 
-  <div class="w-full max-w-4xl overflow-hidden rounded-2xl shadow-2xl">
-    <div class="grid md:grid-cols-2">
+<body class="font-poppins min-h-screen bg-[#EEEAEA] flex items-center justify-center p-4">
 
-        <!--Parte Branca-->
-      <div class="bg-[#EEEAEA] p-6">
+    <div class="w-full max-w-4xl mx-4 overflow-hidden rounded-2xl shadow-2xl">
 
-        <div class="mb-4 flex items-center gap-3">
-          <img
-            src="./images/logo_ini.png"
-            alt="Logo"
-            class="h-12 w-auto"
-          />
+        <div class="grid md:grid-cols-2">
 
-          <span class="text-2xl font-bold text-red-700">
-            Inimix
-          </span>
+            <!-- Parte Branca -->
+            <div class="order-1 bg-[#EEEAEA] p-5 md:p-6">
+
+                <div class="mb-4 flex items-center gap-3">
+                    <img
+                        src="./images/logo_ini.png"
+                        alt="Logo"
+                        class="h-12 w-auto"
+                    >
+
+                    <span class="text-2xl font-bold text-red-700">
+                        Inimix
+                    </span>
+                </div>
+
+                <p class="mb-2 text-xl text-gray-700">
+                    Bem-vindo
+                </p>
+
+                <h2 class="mb-5 text-center text-2xl md:text-3xl font-semibold text-gray-800">
+                    Entrar
+                </h2>
+
+                <form class="space-y-4">
+
+                    <div>
+                        <label class="mb-1 block text-gray-700">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            placeholder="seuemail@gmail.com"
+                            class="w-full rounded-full border border-gray-300 bg-white px-4 py-2.5 outline-none focus:border-red-700"
+                        >
+                    </div>
+
+                    <div>
+                        <label class="mb-1 block text-gray-700">
+                            Senha
+                        </label>
+
+                        <input
+                            type="password"
+                            placeholder="********"
+                            class="w-full rounded-full border border-gray-300 bg-white px-4 py-2.5 outline-none focus:border-red-700"
+                        >
+                    </div>
+
+                    <div class="flex items-center justify-between text-sm">
+                        <label class="flex items-center gap-2">
+                            <input type="checkbox">
+                            Lembre-me
+                        </label>
+
+                        <a
+                            href="#"
+                            class="text-red-700 hover:underline"
+                        >
+                            Esqueceu a senha?
+                        </a>
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="w-full rounded-full bg-red-700 py-2.5 font-semibold text-white transition hover:bg-red-800"
+                    >
+                        Entrar
+                    </button>
+
+                    <p class="pt-2 text-center text-sm text-gray-700">
+                        Não possui uma conta?
+                        <a
+                            href="#"
+                            class="font-semibold text-red-700 hover:underline"
+                        >
+                            Cadastre-se
+                        </a>
+                    </p>
+
+                </form>
+
+            </div>
+
+            <!-- Lado Vermelho -->
+            <div class="order-2 relative bg-red-700 p-5 md:p-6 text-white">
+
+                <h1 class="mb-3 text-2xl md:text-3xl font-bold leading-tight">
+                    Seu dinheiro.
+                    <br>
+                    Seu controle.
+                </h1>
+
+                <p class="mb-6 text-base">
+                    Segurança e liberdade em um só lugar.
+                </p>
+
+                <div class="space-y-3 text-base font-medium">
+                    <div>✓ Acesso de qualquer lugar</div>
+                    <div>✓ Transferências rápidas</div>
+                    <div>✓ Segurança criptografada</div>
+                </div>
+
+                <img
+                    src="./images/mulher_sorrindo.png"
+                    alt="Pessoa usando celular"
+                    class="hidden md:block absolute bottom-0 right-0 max-h-64"
+                >
+
+            </div>
+
         </div>
-
-        <p class="mb-2 text-xl text-gray-700">
-          Bem-vindo
-        </p>
-
-        <h2 class="mb-5 text-center text-3xl font-semibold text-gray-800">
-          Entrar
-        </h2>
-
-        <form class="space-y-4">
-
-          <div>
-            <label class="mb-1 block text-gray-700">
-              Email
-            </label>
-
-            <input
-              type="email"
-              placeholder="seuemail@gmail.com"
-              class="w-full rounded-full border border-gray-300 bg-white px-4 py-2.5 outline-none focus:border-red-700"
-            />
-          </div>
-
-          <div>
-            <label class="mb-1 block text-gray-700">
-              Senha
-            </label>
-
-            <input
-              type="password"
-              placeholder="********"
-              class="w-full rounded-full border border-gray-300 bg-white px-4 py-2.5 outline-none focus:border-red-700"
-            />
-          </div>
-
-          <div class="flex items-center justify-between text-sm">
-            <label class="flex items-center gap-2">
-              <input type="checkbox" />
-              Lembre-me
-            </label>
-
-            <a
-              href="#"
-              class="text-red-700 hover:underline"
-            >
-              Esqueceu a senha?
-            </a>
-          </div>
-
-          <button
-            type="submit"
-            class="w-full rounded-full bg-red-700 py-2.5 font-semibold text-white transition hover:bg-red-800"
-          >
-            Entrar
-          </button>
-
-          <p class="pt-2 text-center text-sm text-gray-700">
-            Não possui uma conta?
-            <a
-              href="#"
-              class="font-semibold text-red-700 hover:underline"
-            >
-              Cadastre-se
-            </a>
-          </p>
-
-        </form>
-      </div>
-
-      <!-- Lado Vermelho -->
-      <div class="relative bg-red-700 p-6 text-white">
-
-        <h1 class="mb-3 text-3xl font-bold leading-tight">
-          Seu dinheiro.
-          <br>
-          Seu controle.
-        </h1>
-
-        <p class="mb-6 text-base">
-          Segurança e liberdade em um só lugar.
-        </p>
-
-        <div class="space-y-3 text-base font-medium">
-          <div>✓ Acesso de qualquer lugar</div>
-          <div>✓ Transferências rápidas</div>
-          <div>✓ Segurança criptografada</div>
-        </div>
-
-        <img
-          src="./images/mulher_sorrindo.png"
-          alt="Pessoa usando celular"
-          class="absolute bottom-0 right-0 max-h-75"
-        />
-
-      </div>
 
     </div>
-  </div>
 
 </body>
 </html>
